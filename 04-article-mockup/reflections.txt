@@ -7,3 +7,27 @@ You've learned a lot about web development so far. I want you to take a moment t
 ---
 
 Your response goes here!
+
+* What new skills have you learned?
+===================================
+
+One of the new skills I just recently learned through the course was about file paths and how they determine the location of a resource so that it can be accessed. A file path can be external, such as on a web page or local.
+
+* What has been easy?
+=====================
+
+The easiest aspect of this course so far has been being re-introduced to some of the commonly used HTML elements such as headers, paragraphs, anchor links, lists and images.
+
+* What has been difficult?
+==========================
+
+The hardest aspect has been learning about how the browser exposes paths for files that can be accessed by a web browser. Also, using the correct elements to match the mock up document for the Lesson 04 project.
+
+Not course related but also setting up a local repo for keeping track of downloaded class assets for in-class work.
+
+
+* How have you used the problem solving strategies from the first project to overcome challenges so far?
+* =========================
+
+Have yet to need to use these but look forward to using them.
+
