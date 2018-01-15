@@ -1,1 +1,61 @@
 /* add your CSS here */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*Restyle lists*/
+
+/*Remove default browser inherited styles*/
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+/*bolden spans within lists*/
+ul span {
+  font-weight: bold; /*500*/
+}
+
+
+/* Card */
+
+/* Card should be about 300px wide to match width of photo. */
+.card {
+  width: 320px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 8px 8px #eee;
+}
+
+/* Add borders to card items*/
+.card__picture,
+.card__content {
+  border: 1px solid #ccc;
+}
+
+/*Add spacing below image*/
+.card__picture {
+  margin-bottom: 10px;
+}
+.card__title {
+  padding-bottom: 10px;
+}
+.card__content {
+  padding: 10px;
+}
+.card__content p {
+  padding-bottom: 10px;
+}
