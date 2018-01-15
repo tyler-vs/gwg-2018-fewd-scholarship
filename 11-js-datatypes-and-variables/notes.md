@@ -146,3 +146,28 @@ Example:
 
 ```
 
+## Variables
+
+Used commonly in math but also very useful in programming. A way to name a value with an identifier so that the value can be referenced to at a later time in the program.
+
+### Assignment operator (=)
+
+The equal sign, used when assigning variables.
+
+### Keywords
+
+**Keywords**, is a word that has special meaning within a programming language. Such as `var` in the JS language.
+
+### Naming Conventions (for variables)
+
+JavaScript programs usually use a camelCase naming convention, such as `camelCase = 10;` as unique identifiers for variables in the program. Other languages may differ, such a PHP where variables typically use **snake case** like so `my_php_variable = 10;`;
+
+[Google's JavaScript Style guide](https://google.github.io/styleguide/jsguide.html)
+
+
+**Pro-tip** - But there are recommended style guides used in all programming languages that help keep code consistent, clean, and easy-to-read.
+
+Another suggestion is to keep the names of variables to something that may help describe what it is holding.
+
+Avoid vague naming of variables that do not help describe the data being held by the variable.
+
