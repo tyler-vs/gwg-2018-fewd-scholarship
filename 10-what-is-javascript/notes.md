@@ -39,3 +39,17 @@ Developer tools are often used as a **sandbox**, a place to try out code without
 
 If writing code snippets in their entirety within the Developer Tools JavaScript console, be sure to use `shift + enter` to add a newline instead of running the code which happens when you simple press only `enter` or `return`.
 
+## Sample Code
+
+```javascript
+
+document.body.addEventListener('click', function () {
+     var myParent = document.getElementById("Banner"); 
+     var myImage = document.createElement("img");
+     myImage.src = 'https://thecatapi.com/api/images/get?format=src&type=gif';
+     myParent.appendChild(myImage);
+     myImage.style.marginLeft = "160px";
+});
+
+```
+
