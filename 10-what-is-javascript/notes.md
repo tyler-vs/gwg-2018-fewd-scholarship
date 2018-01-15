@@ -53,3 +53,9 @@ document.body.addEventListener('click', function () {
 
 ```
 
+
+## Lesson Summary
+
+- Every browser has built-in JavaScript engines. Chrome's is called V8.
+- JavaScript console and common uses.
+
