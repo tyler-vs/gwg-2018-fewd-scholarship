@@ -106,3 +106,43 @@ General commenting tips:
 
 For the whole Udacity nanodegree program, an actual style guide exists, see [here](https://github.com/udacity/frontend-nanodegree-styleguide). However, as Larry Ullman would suggest - use a style you are most comfortable with and stay consist by using it and not deviate from it.
 
+
+## String (data type)
+
+Strings in JavaScript are just sequences of characters, which can include letters, numbers, punctuations and spaces.
+
+Strings are delimited with quotes, so enclose strings either using `'` single  quotes or `"` double quotes and make sure the same type of quote is used to delimit the actual string data.
+
+Of course, there are template string support in newer JavaScript which in case may use `\`` a back tick. 
+
+### String concatenation
+
+String concatenation allows for the joining of strings and uses the `+` symbol to do so.
+
+```javascript
+
+// some strings held in variables
+var fName = 'Tyler';
+var lName = 'Van Schaick';
+
+// combines or joins the strings together (along with a single white space)
+// to make sure the first and last names do not run together.
+var fullName = fName + ' ' + lName;
+
+```
+
+
+### Implicit Type Coercion
+
+One of the peculiar features of JS code, **implicit type coercion** is when JavaScript tries to determine the correct data type for a given expression.
+
+Example:
+
+```javascript
+
+"Hello" + 5 * 10; // "Hello50" a string, here the number values are implicitly coerced there type into a string.
+
+5 * 10; // 50 a Number, no implicit type coercion
+
+```
+
