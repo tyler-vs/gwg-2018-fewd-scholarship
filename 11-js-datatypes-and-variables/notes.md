@@ -171,3 +171,39 @@ Another suggestion is to keep the names of variables to something that may help 
 
 Avoid vague naming of variables that do not help describe the data being held by the variable.
 
+
+## String Index
+
+### Indexing
+
+Did you know that you can access individual characters in a string? To access an individual character, you can use the character's location in the string, called its **index**.
+
+Can be accessed in two ways: using the **index** *or* using the JS function `charAt()`;
+
+## Escaping Strings and Characters
+
+Sometimes, you want to include quotes within a string and not mess up the quote delimiters required for the sting data type. To do so, a backslash `\` is typically used in front of the character we want to escape. Failing to escape letters, quote characters properly will likely result in a Syntax Error.
+
+Escaping a character tells JavaScript to ignore the character's special meaning and just use the literal value of the character.
+
+## Special Characters
+
+Common special characters that may need to be escaped when using JavaScript strings.
+
+| --- | --- |
+| code | character |
+| --- | --- |
+| `\\` | \\\(backslash) |
+| `\"` | \\"(double quote) |
+| `\'` | \\'(single quote) |
+| `\n` | new line |
+| `\t` | tab |
+
+The last two `\n` and `\t` are unique because they add additional **whitespace** to your strings.
+
+In HTML, remember that all whitespace is collapsed into a single character.
+
+
+Please see MDN's doc pages on Grammar and types [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Using_special_characters_in_strings).
+
+
