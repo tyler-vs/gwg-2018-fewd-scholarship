@@ -28,5 +28,46 @@ Relative and Absolute Units
 - Ems
 - %
 
+## CSS Colors
 
+Color origins from balance of green, blue and red light which is emitted from your computer screen. CSS also uses amounds of Red Green and Blue to specify a certain color to be used.
+
+
+### CSS Color Encoding with RGB
+
+```css
+
+.demo {
+    background-color: rgb(255,0,255); // magenta
+}
+
+```
+
+### Hexadecimal Color Encoding
+
+Using the hexadecimal encoding uses a leading `#` symbol.
+
+```css
+
+.demo {
+    background-color: #FF00FF; // magenta
+}
+
+```
+
+Using the "Color Picker" tool inside Google Chrome
+
+More samples:
+
+
+```css
+
+.demo {
+    background-color: blue;
+    background-color: rgb(0, 0, 255);
+    background-color: #00f;
+}
+```
+
+Each above is the same.
 
