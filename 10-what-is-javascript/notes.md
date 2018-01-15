@@ -22,3 +22,13 @@ ECMAScript (ES5 or ES6) and moving forward will be named ES2016 or ES2017.
 JavaScript is one of the pillars of the three pillars that consist of technologies that make the web possible, along with HTML and CSS. However, unlike HTML and CSS which are **markup languages**, JavaScript is a **programming language**.
 
 
+## The JavaScript Console
+
+**Pro-tip** Use the Keyboard Shortcut Reference found [here](https://developers.google.com/web/tools/chrome-devtools/shortcuts) for Chrome Dev Tools.
+
+On a Mac, use `cmd + option + J` to open the JavaScript console in Google Chrome Dev Tools.
+
+Some advocate, such as Nick Morgan to use the console to test out JavaScript code snippets within the console.
+
+
+
