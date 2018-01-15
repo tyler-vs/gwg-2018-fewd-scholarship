@@ -128,5 +128,10 @@ A *relative pathname* starts from the working directory instead of the root dire
 
 - [MDN's HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [Unicode Character Table](https://unicode-table.com/en/)
-- ...
-
+- Wikipedia Articles
+    + [Unicode](https://en.wikipedia.org/wiki/Unicode)
+    + [Character encoding](https://en.wikipedia.org/wiki/Character_encoding)
+- [Joel on Software - what every developer should know about text](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+- <http://www.i18nguy.com/unicode/codepages.html#msftdos>
+- <https://www.unicode.org/>
+- 
