@@ -45,6 +45,10 @@ The Number data type includes any positive or negative integer, as well as decim
 
 Comparisons between numbers will either evaluate to true or false and use operators which operate on given operands within the expression.
 
+### Logical Operators in JavaScript
+
+Used commonly with arithmetic.
+
 | --- | --- |
 | Operator | Meaning |
 | --- | --- |
@@ -59,4 +63,46 @@ Comparisons between numbers will either evaluate to true or false and use operat
 
 **Pro-tip** Just like the command line of an operating system, the developer tools JS console can redisplay a history of past commands entered by hitting the up arrow on the prompt line.
 
+
+## Comments in JavaScript
+
+Programmers use **comments** to make it easier for other programmers to read and understand their code.
+
+
+```javascript
+
+// A comment
+
+/*
+
+    A block comment. For longer descriptions.
+ 
+ */
+
+function rev(word) {
+    
+    // if no argument is passed then exit function
+    if (word !== '') {
+        return;
+    }
+    
+    // placeholder variable
+    var reverseWord = '';
+
+    // loops over the characters in reverse order
+    for (var i = word.length - 1; i >= 0; i--) {
+        reverseWord = reverseWord.concat(word[i]);
+    }
+
+    return reverseWord;
+}
+
+```
+
+General commenting tips:
+
+- Comments are often used to clarify and document non-obvious code. 
+- It's good practice to include code comments to improve code readability.
+
+For the whole Udacity nanodegree program, an actual style guide exists, see [here](https://github.com/udacity/frontend-nanodegree-styleguide). However, as Larry Ullman would suggest - use a style you are most comfortable with and stay consist by using it and not deviate from it.
 
