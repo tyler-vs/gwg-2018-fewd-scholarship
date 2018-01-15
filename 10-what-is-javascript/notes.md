@@ -31,4 +31,11 @@ On a Mac, use `cmd + option + J` to open the JavaScript console in Google Chrome
 Some advocate, such as Nick Morgan to use the console to test out JavaScript code snippets within the console.
 
 
+## `console.log` and JavaScript
+
+Developer tools are often used as a **sandbox**, a place to try out code without any long term consequences.
+
+`console.log` is typically used when debugging JavaScript code.
+
+If writing code snippets in their entirety within the Developer Tools JavaScript console, be sure to use `shift + enter` to add a newline instead of running the code which happens when you simple press only `enter` or `return`.
 
