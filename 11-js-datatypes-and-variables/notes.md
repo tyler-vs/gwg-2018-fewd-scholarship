@@ -1,5 +1,7 @@
 
-# 11 JavaScript Datatypes and Variables
+# Lesson 11 JavaScript Datatypes and Variables
+
+**Pro-tip** Use the JS console in Chrome to test some of the examples from the lesson.
 
 ## Intro to Data Types
 
@@ -31,4 +33,30 @@ Primitive data types in JavaScript include:
 - booleans
 - undefined
 - null
+
+
+## Numbers (data type)
+
+The Number data type includes any positive or negative integer, as well as decimals.
+
+### Arithmetic operations
+
+### Comparing numbers
+
+Comparisons between numbers will either evaluate to true or false and use operators which operate on given operands within the expression.
+
+| --- | --- |
+| Operator | Meaning |
+| --- | --- |
+| `<` | Less than |
+| `>` | Greater than |
+| `<=` | Less than or equal to |
+| `>=` | Greater than or equal to |
+| `==` | Equal to |
+| `===` | Strict equal to |
+| `!=` | Not equal to |
+| --- | --- |
+
+**Pro-tip** Just like the command line of an operating system, the developer tools JS console can redisplay a history of past commands entered by hitting the up arrow on the prompt line.
+
 
