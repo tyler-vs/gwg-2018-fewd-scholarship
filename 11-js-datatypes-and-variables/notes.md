@@ -264,3 +264,8 @@ console.log(myFavFood);
 
  ```
 
+
+## Booleans
+
+A Boolean value is simply a value that's either true or false. Many expressions result in either a Boolean true or false.
+
