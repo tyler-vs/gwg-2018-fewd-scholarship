@@ -269,3 +269,29 @@ console.log(myFavFood);
 
 A Boolean value is simply a value that's either true or false. Many expressions result in either a Boolean true or false.
 
+
+## Null, Undefined and NaN
+
+### `undefined`
+
+"Absence of value"
+
+`undefined` is the value JS uses when it does not have a value for something.
+
+```js
+
+var myVar;
+myVar; // returns `undefined`
+
+```
+
+### `null`
+
+"Value of nothing"
+
+`null` is the value typucally used when you want to deliberately say "this is empty". As in perhaps the variable will be assigned a value later on in the program.
+
+### `NaN`
+
+`NaN` stands for "Not-A-Number" and it is often returned indicating an error with number operations.
+
