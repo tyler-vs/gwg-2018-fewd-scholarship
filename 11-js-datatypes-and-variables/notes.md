@@ -295,3 +295,81 @@ myVar; // returns `undefined`
 
 `NaN` stands for "Not-A-Number" and it is often returned indicating an error with number operations.
 
+
+## Equality
+
+Typically seen in expressions using `==`, `===` and `!=`.
+
+When mixing datatypes upon comparing them may result in some interesting results.
+
+```js
+
+"1" == 1 // returns true
+
+0 == false // returns true
+
+```
+
+### Implicit type coercion (again)
+
+This is due to the fact the _JavaScript is a loosely typed language_.
+ Loosely typed meaning that when programming in JavaScript, unlike compiled programs, you do not need to specify that data date. Instead, when the code is interpreted by the JavaScript engine (and each browser vendor has their own) it will automatically converted in the "appropriate" data type.
+
+Examples:
+
+```js
+
+// #1
+var myName = "julia" + 1; // returns "julia1", a string data type
+
+// #2
+"Hello" % 10 // returns NaN
+
+// #3
+
+```
+
+### A Strongly Typed Language
+
+A strongly types language is a programming language that is more likely to generate errors if data does not closely match an expected type.
+
+Example of a strongly typed programming language, where `int` is declared before the variable name to show that it will be an integer data type for that piece of data. `string` for a string data type and `float` and `double` would be considered Number data types in JS.
+
+```
+
+int count = 1;
+string name = "Julia";
+double num = 1.2932;
+float price = 2.99;
+
+```
+
+### Reviewing expressions that use `==` or `!=`
+
+When you use the `==` or `!=` operators, JavaScript first converts each value to the same type (if they’re not already the same type); this is why it's called "type coercion"! **This is often not the behavior you want, and it’s actually considered bad practice to use the `==` and `!=` operators when comparing values for equality.**
+
+### Strict equality `===` and `!==`
+
+Strict equality is more strict when equating values in an expression because it checks both `value` and the `data type`.
+
+Instead, in JavaScript it’s better to use strict equality to see if numbers, strings, or booleans, etc. are identical in type and value without doing the type conversion first. To perform a strict comparison, simply add an additional equals sign `=` to the end of the `==` and `!=` operators.
+
+Some examples from the JS console:
+
+```js
+
+"3" > 1
+true
+3 != "3"
+false
+true >= 0
+true
+1 !== false
+true
+"false" === 0
+false
+3 === 3
+true
+
+```
+
