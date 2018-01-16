@@ -207,3 +207,60 @@ In HTML, remember that all whitespace is collapsed into a single character.
 Please see MDN's doc pages on Grammar and types [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Using_special_characters_in_strings).
 
 
+## Comparing Strings
+
+A common way to work with strings is by comparing them.
+
+String can be compared typically using the `==` and `!=` logical operators. However.
+
+### Case-sensitive
+
+When comparing strings, case matters! Despite strings having the same letters,capitalization of said letters may influence whether two strings equality.
+
+```
+// from the Chrome JS console
+
+"green" == "blue"
+false
+"green" == "green"
+true
+"green" == "Green"
+false
+"Green" == "green"
+false
+"green" > "blue"
+true
+"green" > "green"
+false
+"green" > "Green"
+true
+"Green" > "green"
+false
+
+```
+
+How does JavaScript determine a given strings values for when comparing strings?
+
+ Each character is assigned a numerical value that essentially corresponds to the character's location in an ASCII table: <https://www.ascii-code.com/>.
+
+
+ ```javascript
+
+/*
+ * Programming Quiz: Favorite Food (2-3)
+ */
+
+var myFavFood = "PiZZa";
+myFavFood = myFavFood.toLowerCase();
+
+var capitalizeFirstLetter = myFavFood[0].toUpperCase();
+
+var restOfString = myFavFood.slice(1);
+
+myFavFood = capitalizeFirstLetter + restOfString;
+
+console.log(myFavFood);
+
+
+ ```
+
