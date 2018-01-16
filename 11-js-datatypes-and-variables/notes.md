@@ -374,9 +374,12 @@ true
 ```
 
 
-# Semicolons in JS `;`
+## Semicolons in JS `;`
 
 One thing to take notice of in all the examples you've seen so far is the use of semicolons ; at the end of each line. Semicolons make it clear where one statement ends and another begins.
 
 
+## Lesson Summary
 
+- The primitive JS data types
+- JS variables
