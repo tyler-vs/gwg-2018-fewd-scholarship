@@ -61,3 +61,41 @@ console.log('total cound: ' + count); // 8
 #### 2-2
 
 _skip_
+
+
+## For loops
+
+An alternative to the while loop, that suppodely gives you (the programmer) 
+greater control over the loop.
+
+
+
+## Nesting For Loops 
+
+
+```
+
+for (var x = 0; x < 5; x = x + 1) {
+  for (var y = 0; y < 3; y = y + 1) {
+    console.log(x + "," + y);
+  }
+}
+
+
+```
+
+
+## Increment && Decrement 
+
+Typically a loop will need to increment and decrement a counter value, 
+JS provides increment operator && decrement operator.
+
+Know that you can do --x and x-- , can potentially matter in your loop.
+
+### Other assignment operators
+
+x += y  => x = x + y;
+x -= y  => x = x - y;
+x *= y  => x = x * y;
+x /= y  => x = x / y;
+x %= y  => x = x % y;
