@@ -5,22 +5,50 @@
 
 ## creating an array
 
-## accessing array members
+## accessing array members with square brackets
+
+square bracket notation can be used to access _array members_, or items within an arrays.
+
+First is `square bracket notation`, using `[]` prepended to an array to access a specific array member
+
+```js
+['a','b','c'][0]; // returns "a"
+```
+
+
+Using bracket notation can access an array memeber that is within another arrays:
+
+```js
+
+[['a','b','c'],['foo','bar']][0][0]; // returns 'a'
+
+```
+
 
 ## array index
 
 ## array properties and methods
 
 - `length`
+
+### Adding or removing an array element at either the beginning or end of an array.
+
 - `pop()`
 - `push()`
-- `splice()`
-- `reverse()`
-- `sort()`
 - `shift`
 - `unshift`
 
+### adding or removinig an array element at any position
+
+- `splice()`
+
+
+- `reverse()`
+- `sort()`
+
 ## array loops
+
+Looping through an array is a common task, one may use the handy `for loop` method or may opt for an array method to loop though an array's members.
 
 Basics
 
