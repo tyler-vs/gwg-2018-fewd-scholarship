@@ -46,7 +46,7 @@ Using bracket notation can access an array memeber that is within another arrays
 - `reverse()`
 - `sort()`
 
-## array loops
+## looping over an array
 
 Looping through an array is a common task, one may use the handy `for loop` method or may opt for an array method to loop though an array's members.
 

@@ -1,16 +1,21 @@
 
-# 14 - Functions
+# 14 - functions
+
+> Summary: write functions declarations to package up bits of code to use throughout your program (espeicially for pieces of a program that repeat certain actions), and learn different ways to write function declartions so you can easily pass functions to other functions.
 
 ## functions
 
-- what is a function
-- declaring functions
+A **function** is a self contained colelction of statements that run as a single unit. _~ Ethan Brown, Learning JavaScript, 2016_
 
-## return values
+A **function body** is the collection of statements that compoase the function.
 
-..
+## return value(s)
 
-## Callbacks && functions
+If a function does not explicitly return a value then it will return `undefined` by default. To explicitly return a value, use the `return` keyword within the **function body**. Sometime's functions will use `return` by itself when validating the arguments passed into the function. Some common patterns are to `return true;` upon the function running successfully.
+
+**note: return also stops the execution of a function. See control flow exception keywords such as `continue` and `break`.** 
+
+## callbacks && functions
 
 Unlike many other programming languages, JavaScript enables you to freely pass functions around to be executed at a later time. 
 
@@ -20,22 +25,32 @@ Callbacks are special because they patiently wait to execute until their parent 
 
 [See definition source](https://learn.jquery.com/about-jquery/how-jquery-works/)
 
+## parameters vs arguments
+
+**parameters** - are the variables that are used to store data that is passed into a function for the function to use. Parameters are defined when the function itself is defined.
+
+**arguments** - actual data that is passd into an invoked function.
+
 
 ## scope
 
+**scope** - determines when and where variables, constants and arguments are considered to be defined. _~ Ethan Brown, Learning JavaScript, 2016 O'Reilly Media_
+
 ### block scope 
+
+List of statements surrounded by curley braces, refers to identifiers (`var`,  `let`, and `const`) that are only available within that \[code\] block.
 
 ```js
 
 /* 
  * block scope
- * 
- * 
  */
 
 console.log('before the block');
 
+// ------------------
 // a standalone block
+// ------------------
 {
   console.log('inside block');
   const x = 3;
@@ -264,7 +279,7 @@ movies(favoriteMovie, "Finding Nemo");
 
 ```
 
-But you can bypass the first assignment of the function, by passing the function to the `movies()` function inline. See how the function is declared inline as an argument.
+*But* you can bypass the first assignment of the function, by passing the function to the `movies()` function inline. See how the function is declared inline as an argument.
 
 ```js
 
@@ -282,5 +297,6 @@ movies(function displayFavorite(movieName) {
 
 ```
 
-> This type of syntax, writing function expressions that pass a function into another function inline, is really common in JavaScript.
+This type of syntax, writing function expressions that pass a function into another function inline, is really common in JavaScript.
+
 
