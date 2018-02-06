@@ -1,6 +1,14 @@
 
 # 14 - functions
 
+- [functions](#functions)
+- [return values](#return-values)
+- [callbacks && functions](#callbacks-&&-functions)
+- [parameters vs arguments](#parameters-vs-arguments)
+- [scope](#scope)
+- [hoisting](#hoisting)
+
+
 > Summary: write functions declarations to package up bits of code to use throughout your program (espeicially for pieces of a program that repeat certain actions), and learn different ways to write function declartions so you can easily pass functions to other functions.
 
 ## functions
@@ -9,7 +17,7 @@ A **function** is a self contained colelction of statements that run as a single
 
 A **function body** is the collection of statements that compoase the function.
 
-## return value(s)
+## return values
 
 If a function does not explicitly return a value then it will return `undefined` by default. To explicitly return a value, use the `return` keyword within the **function body**. Sometime's functions will use `return` by itself when validating the arguments passed into the function. Some common patterns are to `return true;` upon the function running successfully.
 
@@ -60,7 +68,7 @@ console.log(`Outside the block; x=${x}`);
 
 ```
 
-### hoisting
+## hoisting
 
 **hoisting** - before any JS is executed all functions declarations are "hoisted" to the top of a program in order to be used.
 
