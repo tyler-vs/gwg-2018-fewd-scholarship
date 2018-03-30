@@ -11,6 +11,8 @@ I was fortunate enough to be receive a Grow With Google Challenge Scholarship, t
 - [Usage](#usage)
 - [Credits](#credits)
 - [Contributing](#contributing)
+- [Resources](#resources)
+- [Styleguides](#styleguides)
 
 ## Installation
 
@@ -41,14 +43,23 @@ While not intended to be open source, you can checkout my work by cloning this r
 - Mozilla Developer Network (MDN)
     + https://github.com/mdn
     + https://developer.mozilla.org/en-US/
-
----
+- Myself
+    + https://github.com/tyler-vs
 
 ## Resources
 
-- [Udacity](https://www.udacity.com/)
+- [Udacity website](https://www.udacity.com/)
 - [Article detailing how to get into phase 2](https://medium.com/udacity/the-5-things-you-need-to-do-to-get-selected-for-the-2nd-phase-of-your-google-udacity-scholarship-649f22376030)
 - [Class's github repo](https://udacity.github.io/fend/)
 - [YouTube Channel with Interview Questions for working at Google](https://www.youtube.com/watch?v=mElVGah7Epg)
 - Some definitions for concepts were enhanced with the help of a very good author [Ethan Brown](EthanRBrown) and has a really good book called ["Learning JavaScript"](https://www.amazon.com/Learning-JavaScript-Essentials-Application-Development/dp/1491914912)
 - [Github Flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown/)
+
+## Styleguides
+
+Some helpful style guides that this project is based off of.
+
+- [Udacity's Git](https://udacity.github.io/git-styleguide/)
+- [Udacity's HTML](https://udacity.github.io/frontend-nanodegree-styleguide/index.html)
+- [Udacity's CSS](https://udacity.github.io/frontend-nanodegree-styleguide/css.html)
+- [Udacity's JavaScript](https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
