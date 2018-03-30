@@ -10,10 +10,11 @@ I was fortunate enough to be receive a Grow With Google Challenge Scholarship, t
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [Contributing](#contributing)
 
 ## Installation
 
-While not intended to be open source, you can checkout my work by cloning this repo and create issues or send pull request if you see errors and want to contribute.
+You can clone the repo or simply [download](https://github.com/tyler-vs/gwg-2018-fewd-scholarship/archive/master.zip).
 
 ### Udacity Google Chrome Extension
 
@@ -22,6 +23,10 @@ The course will evaluate your work and one way in which it does so is by using a
 ## Usage
 
 Each lesson has it's own sub directory within the repository root directory. Also each lesson should be on it's own branch - when a lesson branch is complete it is merged back into the `master` branch, so it is important that code is working _before_ merging. Omitted lessons are usually projects which were likely completed within the Udacity platform online or had content related to setup.
+
+## Contributing
+
+While not intended to be open source, you can checkout my work by cloning this repo and create a [issue](https://github.com/tyler-vs/gwg-2018-fewd-scholarship/issues/new) or send pull request if you see errors and want to contribute.
 
 ## Credits
 
