@@ -49,8 +49,9 @@ While not intended to be open source, you can checkout my work by cloning this r
 ## Resources
 
 - [Udacity website](https://www.udacity.com/)
+- [GWG Developer Scholarship Website](https://sites.google.com/udacity.com/gwgdevscholarship/home)
 - [Article detailing how to get into phase 2](https://medium.com/udacity/the-5-things-you-need-to-do-to-get-selected-for-the-2nd-phase-of-your-google-udacity-scholarship-649f22376030)
-- [Class's github repo](https://udacity.github.io/fend/)
+- [Courses related github repo](https://udacity.github.io/fend/)
 - [YouTube Channel with Interview Questions for working at Google](https://www.youtube.com/watch?v=mElVGah7Epg)
 - Some definitions for concepts were enhanced with the help of a very good author [Ethan Brown](EthanRBrown) and has a really good book called ["Learning JavaScript"](https://www.amazon.com/Learning-JavaScript-Essentials-Application-Development/dp/1491914912)
 - [Github Flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown/)
