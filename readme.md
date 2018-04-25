@@ -5,6 +5,10 @@
 
 I was fortunate enough to be receive a Grow With Google Challenge Scholarship, this repository contains notes and examples from the course. Thank you Google and Udacity for such a great oppurtunity for me to take part of. As someone who is trying to get a foot hold into the tech industry as a front-end web developer, this course was of tremendous importance to me because I can follow the footsteps of a leader in technology and fell confident in the curriculum.
 
+**Phase 2 Branch!!!**
+
+Phase 2 content will be contained in the `phase-2` branch.
+
 ## Table of content
 
 - [Installation](#installation)
