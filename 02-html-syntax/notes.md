@@ -1,8 +1,5 @@
 
-
-
-# 02 html syntax
-
+# 02 HTML Syntax
 
 ## HTML Doctypes
 
@@ -45,11 +42,14 @@ A modern basic web page.
 
 ### [HTML validators](https://validator.w3.org/)
 
-HTML validators are simple tools that will scan your page for HTML related errors or issues. Different issues will be reported based on the HTML doctype decalared for the document. If omitted it will default to HTML 4.
+HTML validation includes simple tools that will scan your page for HTML related errors or issues. Different issues will be reported based on the HTML `doctype` declared for the document. If omitted it will default to HTML 4.
 
 ## HTML and Trees
 
-...
+There exists a relationship between data trees and HTML. 
+
+- tree structures allow you to organize HTML docs into meaningful sections
+- helpful for readability _and_ to provide a consistent structure for styling and programmatic control with CSS and JavaScript.
 
 ## Some basic HTML Elements
 
@@ -117,8 +117,6 @@ A *relative pathname* starts from the working directory instead of the root dire
 
 
 ### Figures
-
-
 
 
 ---
