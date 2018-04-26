@@ -1,6 +1,16 @@
 
 # 02 HTML Syntax
 
+## TOC
+
+- [HTML Doctypes](#html-doctypes)
+- [Text Editors](#text-editors)
+- [Encoding](#encoding)
+- [HTML and Trees](#html-and-trees)
+- [Some basic HTML Elements](#some-basic-html-elements)
+- [Paths](#paths)
+- [Mock-up to Website](#mock-up-to-website)
+
 ## HTML Doctypes
 
 Browsers looks for the doctype declaration to determine which rendering mode to use to render the site. Without a declared doctype, the browser will default to trying to render in "quirks mode", which may cause rendering issues/errors.
@@ -38,6 +48,8 @@ A modern basic web page.
 
 ## Encoding
 
+### the `<meta>` tag, usually found in the `<head>` element.
+
 `<meta charset="UTF-8">` is a meta tag with `charset` HTML attribute to declare the text's encoding.
 
 ### [HTML validators](https://validator.w3.org/)
@@ -53,11 +65,12 @@ There exists a relationship between data trees and HTML.
 
 ## Some basic HTML Elements
 
-- HTML button
+- HTML button element
 - Headers (h1-h4)
 - Lists
 - Anchor links
 - Images
+- HTML [`<figure>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) element.
 
 ## Paths
 
@@ -118,6 +131,32 @@ A *relative pathname* starts from the working directory instead of the root dire
 
 ### Figures
 
+…
+
+## Mock-up to Website
+
+### Relationship between devs and designers
+
+Web developers commonly work with designers, while the designers usually focus on creating _user experience_ and _user interfaces_ the web developer usually takes the designers composition/mock-ups and transforms it to work on the web medium.
+
+Web developers _translates_ a designer's mock-up into a live site, _translate_ because the web developer can create the the same website design using different HTML elements (i.e. using generic `<div>`'s and `<span>` compared to using semantic HTML5 elements like `<header>`, `<footer>`, ect.)
+
+### The process of _translating_ a mock-up into a live site
+
+First and foremost, start by taking a few minutes to analyze the mock-up and ask yourself some questions related to implementing the site.
+
+- what text changed?
+- what images are there?
+
+When _translating_ things onto the web medium, your typically generally thinking in squares, positioning and complex nesting in order to acheive layouts.
+
+A general workflow may look like:
+
+- position text content to match mock-up
+    + _Note:_ If using a CMS like WordPress, this may entail an additional step of getting the correct data flowing from back-end to front-end.
+- style the content to match the mock-up
+- add any images that are missing, and make it a concern to provide accessible enhancements, such as using the `alt` attribute with meaningful content.
+
 
 ---
 
@@ -132,4 +171,4 @@ A *relative pathname* starts from the working directory instead of the root dire
 - [Joel on Software - what every developer should know about text](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 - <http://www.i18nguy.com/unicode/codepages.html#msftdos>
 - <https://www.unicode.org/>
-- 
+- [markdown language documentation](https://daringfireball.net/projects/markdown/)
