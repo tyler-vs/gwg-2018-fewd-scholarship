@@ -14,7 +14,7 @@ This lesson is a problem set, see the solution from phase 1 [here](./fend-animal
 5. slack card
 6. slack card workspace
 7. udacity site header
-8. 
+8. stylesheet
 
 - [Resources](#resources)
 - 
@@ -155,7 +155,17 @@ Every CSS statement is made up of a __selector__ and a __declaration block__.
 ## udacity site header
 
 
+## stylesheet
 
+**Stylesheets**- A stylesheet is a file containing the code that describes how elements on your webpage should be displayed.
+
+the `<link>` element can be used to link an external CSS stylesheet.
+
+the `rel` attribute describes the relationship between the resource and your document.
+
+```html
+<link href="path-to-stylesheet/stylesheet.css" rel="stylesheet">
+```
 
 
 ---
