@@ -119,22 +119,25 @@ Example of Georgia (serif font) CSS font stack
 
 `font-family: Georgia, Times, Times New Roman, serif` from [cssfontstack.com](https://www.cssfontstack.com/Georgia).
 
-
 ### Custom fonts
 
 https://fonts.google.com/
 
 #### Font stacks
 
-
-
+…
 
 ## writing selectors
 
+Every CSS statement is made up of a __selector__ and a __declaration block__.
 
 
 
 ## using attributes
+
+- [MDN CSS selector docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
+- [CSS-Tricks how CSS Selectors Work](https://css-tricks.com/how-css-selectors-work/)
+
 
 
 
