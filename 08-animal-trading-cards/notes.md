@@ -137,7 +137,7 @@ Every CSS statement is made up of a __selector__ and a __declaration block__.
 
 - [MDN CSS selector docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
 - [CSS-Tricks how CSS Selectors Work](https://css-tricks.com/how-css-selectors-work/)
-
+- [CSS-Tricks CSS specificity article](https://css-tricks.com/specifics-on-css-specificity/)
 
 
 
