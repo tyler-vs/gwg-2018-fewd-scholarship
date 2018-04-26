@@ -101,6 +101,31 @@ Salmon color HEX code: `#fa8072`.
 
 ## style the font
 
+- `#8001ff`
+
+### Fonts
+
+First, ask yourself what fonts are available to your users. Every operating system comes with pre-installed fonts.
+
+### Web safe fonts
+
+https://www.cssfontstack.com/
+
+The `font-family` CSS property to specify font's to use in an HTML document.
+
+The browser, starting from left to right, looks through the specified fonts and determines which font(s) can be renders, so using a web-safe font should be the last resort and placed last (the most rightmost) in a font stack. **Not all fonts are available on every operating system.**
+
+Example of Georgia (serif font) CSS font stack
+
+`font-family: Georgia, Times, Times New Roman, serif` from [cssfontstack.com](https://www.cssfontstack.com/Georgia).
+
+
+### Custom fonts
+
+https://fonts.google.com/
+
+#### Font stacks
+
 
 
 
