@@ -94,6 +94,32 @@ video {
 
 see solutions.
 
+## tap target sizes
+
+Human fingers about 10 mm, 1/2 inch or 40 CSS pixels. Golden rule, 48x48, 40 pixels of room between tap targets.
+
+```css
+
+nav a,
+button {
+    min-width: 48px;
+    min-width: 48px;
+}
+
+```
+
+simply using `width` and `height` CSS properties may not work because it won't allow element to resize _if the element inside is bigger than the container_.
+
+## start small
+
+mobile-first design, starting with the smallest form factor, is there a need for a design for a wider screen?
+
+See https://en.wikipedia.org/wiki/Responsive_web_design
+
+### prioritize content
+
+content -> upside-down funnel.
+
 
 
 ---
