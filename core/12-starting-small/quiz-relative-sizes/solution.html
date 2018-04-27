@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #owl {
+      width: 640px;
+      max-width: 100%;
+    }
+
+    .logo {
+      width: 125px;
+    }
+
+    .box {
+      width: 350px;
+    }
+
+    .city {
+      width: 100%;
+    }
+
+    div {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://placehold.it/500" alt="" id="owl">
+
+  <p><strong>true</strong>, responsive</p>
+
+  <hr>
+
+  <img src="https://placehold.it/500" alt="" class="logo">
+  <p><strong>true</strong>, responsive because it is smaller than what a normal mobile viewport would be.</p>
+
+  <hr>
+
+  <div class="box">&nbsp;</div>
+  <p><strong>false</strong>, not responsive, 350px would go over the 320px viewport width and make some of that element outside of the visible viewport area.</p>
+
+  <hr>
+
+  <div class="city">&nbsp;</div>
+
+  <p><strong>true</strong>, responsive because it uses relative values (i.e. %'s, em, rems)</p>
+
+
+</body>
+</html>
