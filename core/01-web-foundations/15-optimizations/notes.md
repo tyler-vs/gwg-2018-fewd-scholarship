@@ -131,6 +131,32 @@ div.container_table {
 
 ## Responsive Typography
 
+### Words per line and ideal "measure" or "line length"
+
+Too short can be confusing yet too long can be difficult to track line-by-line and the user may end up _skimming_ instead of actual reading.
+
+__Measure__ is the length of a line of text.
+
+Some factors for determining an _ideal measure_ may include font being used, device, medium (print or digital). 
+
+General rule of thumb is to use ~65 characters per link (CPL) for the web.
+
+Considering how people read as we create our design as it can affect the layout and perhaps even breakpoints.
+
+Good starter font size CSS:
+
+```css
+
+body {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+```
+
+Making sure type is bumped up for larger screens.
+
+
 --- 
 
 - https://developers.google.com/web/fundamentals/design-and-ux/responsive/images
