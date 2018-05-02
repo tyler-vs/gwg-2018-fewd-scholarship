@@ -11,6 +11,123 @@ This is a course in itself in Udacity and as a article in [Google Web Fundamenta
 
 ## Responsive Tables
 
+HTML Tables are sometimes fixed in dimensions and overflows the screen, causing unwanted _horizontal scrolling_. Note, that sometimes horizontal scrolling is used in new responsive navigation components, see [CSS-Tricks article](https://css-tricks.com/pure-css-horizontal-scrolling/) or this [one](https://css-tricks.com/how-to-create-a-horizontally-scrolling-site/). Or in the Reddit App to view subreddits.
+
+The following examples will have some default table styling taken from the [CSS-Tricks article](https://css-tricks.com/responsive-data-tables/) or you can checkout the [gist](https://gist.github.com/tyler-vs/d13b992db765c443e804c4c97917eaac).
+
+```css
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+```
+
+### Some Options for fixing overflowing tables
+
+Responsive table patterns/techniques include:
+
+- [Hidden Columns](#hidden-columns)
+- [No More Tables](#no-more-tables)
+- [Contained Tables or Contained Scrolling](#contained-tables-or-contained-scrolling)
+
+**tip:** The answer may depend on the content itself. Start small and ask yourself _"what is the most important information?"_.
+
+### Hidden Columns
+
+The **hidden columns** solutions to responsive tables, essentially hides columns based on their importance as the viewport size gets smaller.
+
+A potential issue with using this responsive pattern is that you are hiding content from the user. A possible way to circumvent this issue is by _using abbreviated data instead of hiding it completely_.
+
+
+```html
+
+<table class="scores__table">
+    <thead>
+        <tr>
+            <th>date</th>
+            <th class="gametime">game time</th>
+            <th>team</th>
+            <th colspan="2">score</th>
+            <th>team</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Friday</td>
+            <td class="gametime">7:05pm</td>
+            <td>Royals</td>
+            <td>2</td>
+            <td class="winner">3</td>
+            <td class="winner">Giants</td>
+        </tr>
+    </tbody>
+</table>
+
+```
+
+```css
+
+@media screen and (max-width: 499px) {
+    .gametime {
+        display: none;
+    }
+}
+
+```
+
+View [pen](https://codepen.io/tvs/full/9568b6163e803ab797da948b5e7f9c72/).
+
+### CSS properties `dislay:none` vs `visibility:hidden`
+
+[Article](https://www.lifewire.com/display-none-vs-visibility-hidden-3466884)
+
+### No More Tables
+
+The __"no more tables"__ technique, below a certain viewport width, the table is _collapsed_ and resembles a long list as opposed to a table data, so that all the data is still visible.
+
+This [codepen example](https://codepen.io/JohnMav/pen/BoGJNy) showcases this technique or [locally in this repo](./no-more-tables-pattern.html).
+
+> it's all about the specific context of your data table that dictates what solution to go with.
+> ~ Chris Coyier, [CSS-Tricks](https://css-tricks.com/responsive-data-tables/)
+
+### Contained Tables or Contained Scrolling
+
+The __Contained Tables__ or __Contained Scrolling__ pattern involved wrapping the entire table's `<table>` HTML element in a `<div>` that acts as a _container div_ that applies the following CSS code (example uses pattern CSS with the class of `.container_table`).
+
+```css
+/*
+ * 1. make table as large as the viewport
+ * 2. instead of breaking out of the viewport, the table will instead take 
+ *    up the same width as the viewport and allow a user to 
+ *    touch scroll horizontally.
+ */
+
+div.container_table {
+    width: 100%; /* 1. */
+    overflow-x: auto; /* 2. */
+}
+
+```
+
 
 ## Responsive Typography
 
@@ -21,3 +138,7 @@ This is a course in itself in Udacity and as a article in [Google Web Fundamenta
 - https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
 - https://internetingishard.com/html-and-css/responsive-images/
 - https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML
+- https://www.lifewire.com/display-none-vs-visibility-hidden-3466884
+- https://developer.mozilla.org/en-US/docs/Web/CSS/display
+- https://css-tricks.com/responsive-data-tables/
+- [CSS Tricks round up of possible responsive table solutions/patterns](https://css-tricks.com/responsive-data-table-roundup/).

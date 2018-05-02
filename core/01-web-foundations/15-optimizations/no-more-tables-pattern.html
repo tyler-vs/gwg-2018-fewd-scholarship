@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>no more tables</title>
+
+  <style>
+    table {
+      border: 1px solid #ddd;
+    }
+    tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    /*
+     * "no more tables" pattern styles
+     *
+     * 1. force to render display block instead
+     *    of default or inherited table display value(s).
+     * 2. hide table header, better than using
+     *    display: none - accessibility issue
+     *    for people using screen readers. Positions content
+     *    way off the screen.
+     * 3. make room for header
+     * 4. add row labels
+     * 5. label for row
+     */
+    @media screen and (max-width: 500px) {
+      /* 1. */
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      /* 2. */
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      /* 3. */
+      td {
+        position: relative;
+        padding-left: 50%;
+      }
+
+      /* 4. */
+      td:before {
+        position: absolute;
+        left: 6px;
+        content: attr(data-th); /* 5. */
+        font-weight: bold;
+      }
+
+      td:first-of-type {
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table>
+       <thead>
+         <tr>
+           <th>Team</th>
+           <th>1st</th>
+           <th>2nd</th>
+           <th>3rd</th>
+           <th>4th</th>
+           <th>5th</th>
+           <th>6th</th>
+           <th>7th</th>
+           <th>8th</th>
+           <th>9th</th>
+           <th>Final</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td data-th="Team">Toronto</td>
+           <td data-th="1st">0</td>
+           <td data-th="2nd">0</td>
+           <td data-th="3rd">0</td>
+           <td data-th="4th">4</td>
+           <td data-th="5th">0</td>
+           <td data-th="6th">1</td>
+           <td data-th="7th">0</td>
+           <td data-th="8th">0</td>
+           <td data-th="9th">0</td>
+           <td data-th="Final">5</td>
+         </tr>
+         <tr>
+           <td data-th="Team">San Francisco</td>
+           <td data-th="1st">0</td>
+           <td data-th="2nd">0</td>
+           <td data-th="3rd">0</td>
+           <td data-th="4th">4</td>
+           <td data-th="5th">0</td>
+           <td data-th="6th">0</td>
+           <td data-th="7th">0</td>
+           <td data-th="8th">0</td>
+           <td data-th="9th">0</td>
+           <td data-th="Final">4</td>
+         </tr>
+       </tbody>
+     </table>
+</body>
+</html>
