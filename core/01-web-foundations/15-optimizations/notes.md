@@ -157,6 +157,20 @@ body {
 Making sure type is bumped up for larger screens.
 
 
+## Minor Breakpoints
+
+__Major Breakpoints__ - where layout changes significantly.
+
+__Minor Breakpoints__ - for smaller changes.
+
+Examples:
+
+- font size
+- margins/padding
+- icon sizes
+
+
+
 --- 
 
 - https://developers.google.com/web/fundamentals/design-and-ux/responsive/images
