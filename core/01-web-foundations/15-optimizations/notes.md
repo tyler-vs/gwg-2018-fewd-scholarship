@@ -170,6 +170,10 @@ Examples:
 - icon sizes
 
 
+## Quiz: Home Town App part 3 of 3
+
+
+
 
 --- 
 
@@ -182,3 +186,5 @@ Examples:
 - https://developer.mozilla.org/en-US/docs/Web/CSS/display
 - https://css-tricks.com/responsive-data-tables/
 - [CSS Tricks round up of possible responsive table solutions/patterns](https://css-tricks.com/responsive-data-table-roundup/).
+- https://en.wikipedia.org/wiki/Responsive_web_design
+- 
