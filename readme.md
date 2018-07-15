@@ -42,6 +42,13 @@ core:
 
 ```
 
+Links to my project repositories
+
+- [article markup](https://github.com/tyler-vs/gwg-article-mockup)
+- [portfolio site](https://github.com/tyler-vs/gwg-project-1-portfolio-site)
+- [pixel art maker](https://github.com/tyler-vs/gwg-pixel-art-maker)
+- [memory game](https://github.com/tyler-vs/fend-project-memory-game)
+
 ## Table of content
 
 - [Installation](#installation)
