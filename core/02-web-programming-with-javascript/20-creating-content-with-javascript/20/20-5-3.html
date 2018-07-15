@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>20-5-3</title>
+</head>
+<body>
+<!--   div#page>h1#header{List}+h2#other-header{Buy Greoceries}+ul.grocery-list>li#$.grocery-list__item{Item #$}*5 -->
+  
+  <div id="page">
+    <h1 id="header">List</h1>
+    <h2 id="other-header">Buy Greoceries</h2>
+    <ul class="grocery-list">
+      <li id="1" class="grocery-list__item">Item #1</li>
+      <li id="2" class="grocery-list__item">Item #2</li>
+      <li id="3" class="grocery-list__item">Item #3</li>
+      <li id="4" class="grocery-list__item">Item #4</li>
+      <li id="5" class="grocery-list__item">Item #5</li>
+    </ul>
+  </div>
+  
+  <h1 id="main-heading" class="ank-student jpk-modal">Learn Web Development at Udacity</h1>
+  <script>
+    // example showing classList
+    
+    const myList = document.querySelector('.grocery-list');
+    
+    console.log(myList.classList);
+    
+    const mainHeading = document.querySelector('#main-heading');
+    mainHeading.classList.toggle('richard');
+  </script>
+</body>
+</html>
