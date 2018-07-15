@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>modify an element's style attribute</title>
+  <style>
+    .box {
+      width: 100%;
+      max-width: 800px;
+      background: goldenrod;
+    }
+  </style>
+</head>
+<body>
+  <h1>modify an element's style attribute</h1>
+  
+  <div class="box">
+    <p>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam ex a laboriosam in perferendis perspiciatis suscipit illo laudantium sit ad expedita ut quidem accusamus, corrupti fuga quod eveniet itaque.</span>
+      <span>Molestias inventore beatae animi deleniti quis harum reiciendis repudiandae. Recusandae tenetur voluptates voluptate incidunt ab odio ipsa. Quisquam architecto iste suscipit rerum dolore dolorum! Alias incidunt culpa rem praesentium hic!</span>
+      <span>Eum totam molestias in nobis excepturi tenetur illum corporis incidunt, eaque numquam iste. Tempora quaerat vel voluptatum nulla esse reprehenderit, obcaecati aliquam exercitationem aut distinctio saepe! Exercitationem debitis dolorum ratione!</span>
+      <span>Nemo vel cupiditate dolore ipsum voluptate sint, eveniet modi aliquid accusantium recusandae eos perspiciatis quibusdam quod aperiam corrupti nulla qui ratione quisquam minus quasi facere quae? Incidunt reprehenderit quisquam dolor?</span>
+      <span>Aut itaque laboriosam nihil dolor culpa aliquam ex architecto officia nesciunt, rerum distinctio, facilis quisquam. Veritatis, repellat? Inventore officiis modi error omnis eos perspiciatis tempore? Doloribus ex omnis voluptates accusantium.</span>
+    </p>
+  </div>
+  <script>
+    const mainHeading = document.querySelector("h1");
+    mainHeading.style.color = "red";
+    
+    const myBox = document.querySelector('.box');
+    myBox.style.width = '50%';
+  </script>
+</body>
+</html>
