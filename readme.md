@@ -12,6 +12,36 @@ I was fortunate enough to be receive a Grow With Google Challenge Scholarship, t
 
 Phase 2 content will be contained in the `phase-2` branch. The new repository structure aims to reflect the structure of the core curriculum. Since the second phase contains and expands upon some of the material from the first phase, you will see some of the first phase content repositioned to reflect the second phases curriculum structure.
 
+
+```
+
+core: 
+
+- web foundations
+    + nano-degree info
+    + HTML series
+    + CSS series
+    + responsive web design series
+    + project: build a portfolio website
+- web programming with javascript
+    + intro to javascript series
+    + shell workshop
+    + git series
+    + javascript and the DOM series
+    + project: pixel art maker
+    + project: memory game
+- exploring js - objects, tools and testing
+    + web accessibility series
+    + OOP in JavaScript series
+    + project: classic arcade game
+    + gulp.js series
+    + testing javascript series
+    + project: feed reader testing
+- front-end applications
+- building with react
+
+```
+
 ## Table of content
 
 - [Installation](#installation)
