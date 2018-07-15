@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+/* 
+ * styles.css
+ */
+
+body {
+  background: #fafafa;
+  font-family: serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;
+  
+  max-width: 600px;
+  margin: 0 auto;
+}
