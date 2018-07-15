@@ -12,37 +12,7 @@ I was fortunate enough to be receive a Grow With Google Challenge Scholarship, t
 
 Phase 2 content will be contained in the `phase-2` branch. The new repository structure aims to reflect the structure of the core curriculum. Since the second phase contains and expands upon some of the material from the first phase, you will see some of the first phase content repositioned to reflect the second phases curriculum structure.
 
-
-```
-
-core: 
-
-- web foundations
-    + nano-degree info
-    + HTML series
-    + CSS series
-    + responsive web design series
-    + project: build a portfolio website
-- web programming with javascript
-    + intro to javascript series
-    + shell workshop
-    + git series
-    + javascript and the DOM series
-    + project: pixel art maker
-    + project: memory game
-- exploring js - objects, tools and testing
-    + web accessibility series
-    + OOP in JavaScript series
-    + project: classic arcade game
-    + gulp.js series
-    + testing javascript series
-    + project: feed reader testing
-- front-end applications
-- building with react
-
-```
-
-Links to my project repositories
+### Links to my individual project repositories
 
 - [article markup](https://github.com/tyler-vs/gwg-article-mockup)
 - [portfolio site](https://github.com/tyler-vs/gwg-project-1-portfolio-site)
@@ -64,7 +34,7 @@ You can clone this repository or simply [download](https://github.com/tyler-vs/g
 
 ### Udacity Google Chrome Extension
 
-The course will evaluate your work and one way in which it does so is by using a web browser exension for the Google Chrome browser, it can be downloading here [download](https://chrome.google.com/webstore/detail/udacity-front-end-feedbac/melpgahbngpgnbhhccnopmlmpbmdaeoi/related).
+The course will evaluate your work and one way in which it does so is by using a web browser extension for the Google Chrome browser, it can be downloading here [download](https://chrome.google.com/webstore/detail/udacity-front-end-feedbac/melpgahbngpgnbhhccnopmlmpbmdaeoi/related).
 
 ## Usage
 
