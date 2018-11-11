@@ -17,7 +17,6 @@ const coolGames = [
 console.log('Cool Games: ' + coolGames);
 
 const games = new Set(coolGames);
-// const games = new Set(coolGames);
 
 console.log('Games: \n');
 console.log(games); // Set { 'Super Mario 64', 'Banjo-Kazooie', 'Mario Kart' }

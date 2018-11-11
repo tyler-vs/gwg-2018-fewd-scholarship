@@ -18,6 +18,11 @@ Build-upon examples found in the [examples](./examples/) directory.
   - Create a set
 - Modifying sets
 - Working with sets
+  - Checking the length
+  - Checking if an item exists
+  - Retrieving all values
+    - Using the `.add()` method when adding items to a set.
+    - Type coercion in sets
 - Sets and iterators
 - Quiz: using sets
 - WeakSets
@@ -253,20 +258,128 @@ console.log(games); // Set {}
 
 ```
 
-Create a set from a list of values
+To add multiple values to a set when creating it, an array can be used.
 
+```js
 
+const numbers = [2,2,2,2,3,7,7,7,7,8,8,8,8,8];
+const setNumbers = new Set(numbers);
 
+console.log(setNumbers); // Set({2,3,7,8})
+
+```
 
 
 ## Modifying sets
 
+- Adding using `.add()`
+- Removing using `.delete()`
+- Looping over (Reading set values)
 
+If attempting to `.add()` a duplicate item to a set, you will not receive an error, but the item will not be added to the Set. Also, if attempting to use `.delete()` on an item that is not in a Set, you will not receive an error, and the Set will remain unchanged.
 
+The `.add` returns the Set if an item is successfully added. While `.delete()` will return a boolean depending on a successful deletion.
+
+Use `.clear()` to remove all the items of a set.
 
 ## Working with sets
 
+Some things we can do while working with Sets:
 
+- Checking the length
+- Checking if an item exists
+- Retrieving all values
+
+### Checking the length
+
+Using `.size`. Sets cannot be accessed by their index like an arry, so you use the `.size` property instead of the `.length` property to get the size of a Set.
+
+```js
+// months.js
+
+const months = new Set(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']);
+
+console.log(months.size);
+
+```
+
+### Checking if an item exists
+
+Using the `.has()` method. Will return a boolean, either `true` or `false`.
+
+```js
+// months2.js
+//
+// Checking if an item exists using .has()
+
+const months = new Set(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']);
+
+// Check if we have all of the holiday months for the holiday season.
+if (months.has('Oct') && months.has('Nov') && months.has('Dec')) {
+  console.log('Ready for the Holiday season!');
+} else {
+  console.log('Not ready for the Holiday season!');
+}
+
+
+```
+
+### Retrieving all values
+
+We can use the `.values()` method to return the values in a Set. The return value of `.values()` method is a `SetIterator` object.
+
+```js
+// months3.js
+//
+// Retrieving all values from a Set using the .values() method
+
+const months = new Set(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']);
+
+console.log(months.values());
+
+// Returns this:
+// [Set Iterator] {
+// 'Jan',
+// 'Feb',
+// 'Mar',
+// 'Apr',
+// 'May',
+// 'Jun',
+// 'Jul',
+// 'Aug',
+// 'Sep',
+// 'Oct',
+// 'Nov',
+// 'Dec' }
+
+```
+
+__Pro-tip:__ The `.keys()` method will behave the exact same way as the `.values()` method by returning the values of a Set within a new Iterator Object. The `.keys()` method is an alias for the `.values()` method for similarity with maps. `.keys` will be seen again later during the Maps section.
+
+#### Using the `.add()` method when adding items to a set.
+
+```js
+// words.js
+//
+// Exploring mthods used with Sets
+
+const words = new Set().add('the').add('quick').add('brown').add('fox').add('jumped').add('over').add('the').add('lazy').add('dog');
+
+console.log(words); // Set { 'the', 'quick', 'brown', 'fox', 'jumped', 'over', 'lazy', 'dog' }
+```
+
+#### Type coercion in sets
+
+```js
+// coercion.js
+//
+// Type coercion is not used when values are added to a set
+
+const mixedTypes = new Set().add(2).add('2');
+
+console.log(mixedTypes);
+
+```
 
 
 ## Sets and iterators
