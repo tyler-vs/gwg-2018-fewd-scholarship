@@ -24,6 +24,8 @@ Build-upon examples found in the [examples](./examples/) directory.
     - Using the `.add()` method when adding items to a set.
     - Type coercion in sets
 - Sets and iterators
+  - Using the `SetIterator`
+  - Using a `for...of` loop
 - Quiz: using sets
 - WeakSets
 - Quiz: working with WeakSets
@@ -381,11 +383,67 @@ console.log(mixedTypes);
 
 ```
 
-
 ## Sets and iterators
 
+Looping over sets. Recalling previous part of the lesson on the new _iterable_ and _iterator_ protocols in ES6, remember that Sets are build-in iterables, which means two things in terms of looping:
 
+1. you can use the Set's default iterator to step through each item in a Set, one by one
+2. You can use the new `for...of` loop to loop through each item in a Set.
 
+### Using the `SetIterator`
+
+Because the `.values()` method returns a new iterator object (called `SetIterator`), we can store that iterator object in a variable and loop through each item in the Set using `.next()`.
+
+```js
+// months4.js
+//
+// Using the SetIterator method
+
+// const months = new Set(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']);
+const months = new Set(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']);
+
+console.log(months);
+
+const iterator = months.values();
+
+// Invoke iterator.next();
+// iterator.next();
+
+console.log(iterator.next()); // { value: 'January', done: false }
+console.log(iterator.next()); // { value: 'February', done: false }
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next()); //
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+```
+
+### Using a `for...of` loop
+
+An easier method to loop through the items in a Set is the `for...of` loop.
+
+```js
+// colors.js
+//
+// Example of using a for...of loop instead of the SetIterator for
+// looping over a Set.
+
+// A Set
+const colors = new Set(['red', 'orange', 'yellow', 'green', 'blue', 'violet', 'brown', 'black']);
+
+// Using the for...of loop
+for (const color of colors) {
+  console.log(color);
+}
+```
 
 ## Quiz: using sets
 
