@@ -49,6 +49,8 @@ New built-ins available to the javascript language, that make it easier to accom
 - maps
 - promises
 
+In this lesson, we see how these new javascript built-ins for ES6 are structured, how they work and when to best use them.
+
 
 ## Symbols intro
 
