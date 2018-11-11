@@ -15,6 +15,7 @@ Build-upon examples found in the [examples](./examples/) directory.
   - how it works
   - the __iterator__ protocol
 - Sets
+  - Create a set
 - Modifying sets
 - Working with sets
 - Sets and iterators
@@ -220,6 +221,40 @@ An object becomes an iterator when it implements the `.next()` method. The `.nex
 
 
 ## Sets
+
+A set, in Mathematics, is a collection of distinct items, each member of a set is unique and appears only _once_. For example, `{2, 3, 4, 5}` is a set while `{1, 1, 2, 4}` is _not_ a set because it contains _duplicate entires_.
+
+In JavaScript, we can already represent something similar to a set using an array/
+
+```
+
+const nums = [2, 3, 4, 5];
+
+```
+
+However, _arrays do not enforce items to be unique_. We can append an item to an array, say `2`, then an array would be `[2, 3, 4, 5, 2]` which does not qualify as our definition of what a `set`is.
+
+The biggest difference between a set and an array are:
+
+- Sets are not indexed-based, you do not refer to items in a set based on their position in the set
+- items in an Set cannot be accessed individually
+
+Basically, a Set is an object that lets you store unique items. We can add items to a set, remove items and loop over a set. Items or members of a set can be either primitive values or objects.
+
+### Create a set
+
+Create an empty set called `gamed` with no items.
+
+```js
+// games.js
+
+const games = new Set();
+console.log(games); // Set {}
+
+```
+
+Create a set from a list of values
+
 
 
 
