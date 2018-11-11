@@ -211,6 +211,13 @@ In order for an object to be iterable, it must implement the __iterable interfac
 
 the __iterator__ protocol is used to define a standard way that an object producing a sequence of values. Which equates to meaning that in newer ES6, you are allowed to have a process for defining how an object will iterate. This is done through implementing the `.next()` method.
 
+An object becomes an iterator when it implements the `.next()` method. The `.next()` method is a zero arguments function that returns an object with two properties:
+
+1. `value`, the data representing the next value in a sequence of values within the object
+2. `done`, the boolean representing if the iterator is _done_ going through the sequence of values.
+  + if `done` is `true`, then the iterator has reached the end of its sequence of values
+  + if `done` is `false`, then the iterator is able to produce another value in it's sequence of values.
+
 
 ## Sets
 
