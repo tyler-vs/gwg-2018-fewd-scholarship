@@ -8,12 +8,12 @@ Build-upon examples found in the [examples](./examples/) directory.
 - New built-ins in es6
 - Symbols intro
 - Symbols
-    - Creating a symbol
-    - comparing two symbols with the same description
+  - Creating a symbol
+  - comparing two symbols with the same description
 - Iteration and iterable protocols
-    - the __iterable__ protocol
-    - how it works
-    - the __iterator__ protocol
+  - the __iterable__ protocol
+  - how it works
+  - the __iterator__ protocol
 - Sets
 - Modifying sets
 - Working with sets
@@ -36,7 +36,8 @@ Build-upon examples found in the [examples](./examples/) directory.
 - Sending data into/out of a generator
 - Lesson 3 summary
 - Further Reading
-    - symbols
+  - symbols
+  - Iterators
 
 <!-- /MarkdownTOC -->
 
@@ -146,6 +147,28 @@ console.log(newBowl);
 // [Symbol(banana)]: { color: 'yellow', weight: 176.845 } }
 ```
 
+Overall is seems that the common use-case for using symbols is for use as object property keys. Using symbols as object property keys can allow JavaScript objects to be used as [hashmaps](https://en.wikipedia.org/wiki/Hash_table) (an associative array in PHP or dictionary in Python) allows getting/setting properties using bracket notation.
+
+```js
+// hashmaps.js
+
+const data = [];
+
+data['name'] = 'Ted Mosby';
+data['nickname'] = 'Teddy Westside';
+data['city'] = 'New York';
+
+```
+
+Using the bracket notation, we can also use a symbol as a property key.
+
+Advantages for doing so are:
+
+1. You can be sure that a symbol-based keys will never clash, unlike string keys, which might conflict with keys for existing properties or methods of an object. 
+2. They will not be enumerated in `for... in` loops and are ignored bu functions such as `Object.keys`, `Object.getOwnPropertyNames()` and `JSON.stringify()` making them ideal for properties that you do not want to be included when serializing an object.
+
+
+
 ## Iteration and iterable protocols
 
 two new protocols in ES6:
@@ -177,16 +200,16 @@ console.log(arrayIterator.next());
 console.log(arrayIterator.next());
 
 ```
-any object that is iterable can use the new `for...of` loop.
+
+Any object that is iterable can use the new `for...of` loop. Sets and Maps which are other examples of built-in iterables.
 
 ### how it works
 
-in order for an object to be iterable, it must implement the __iterable interface__. Interface, basically means that in order for an object to be iterable, it must contain a default iterator method. This _iterator_ method will define how the objects should be iterated. The __iterator method__ is available via the constant `[Symbo.iterator]`, is a zero arguments function that returns an iterator object. An iterator object is an object that conforms to the iterator protocol.
+In order for an object to be iterable, it must implement the __iterable interface__. _Interface_, basically means that in order for an object to be iterable, it must contain a default iterator method. This _iterator_ method will define how the objects should be iterated. The __iterator method__ is available via the constant `[Symbo.iterator]`, is a zero arguments function that returns an iterator object. An iterator object is an object that conforms to the iterator protocol.
 
 ### the __iterator__ protocol
 
-the __iterator__ protocol is used to define a standard way that an object producing a sequence of values.
-
+the __iterator__ protocol is used to define a standard way that an object producing a sequence of values. Which equates to meaning that in newer ES6, you are allowed to have a process for defining how an object will iterate. This is done through implementing the `.next()` method.
 
 
 ## Sets
@@ -304,3 +327,8 @@ the __iterator__ protocol is used to define a standard way that an object produc
 - http://2ality.com/2014/12/es6-symbols.html
 - https://en.wikipedia.org/wiki/Enumerated_type
 - https://codeburst.io/es2015-built-ins-part-1-symbols-sets-and-maps-608f126dd906
+- https://www.sitepoint.com/es6-symbols-uses/
+
+### Iterators
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols
