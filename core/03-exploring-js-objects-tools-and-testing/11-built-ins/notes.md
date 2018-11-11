@@ -29,6 +29,10 @@ Build-upon examples found in the [examples](./examples/) directory.
 - Quiz: using sets
   - Problem
   - Solution
+  - EXTRA: Converting a set into an array
+    - Approach #1: Using the spread operator
+    - Approach #2: Using the `Array.from()` method to do the same thing
+  - EXTRA: Copy an array with duplicate values removed
 - WeakSets
 - Quiz: working with WeakSets
 - Maps
@@ -516,6 +520,68 @@ console.log(myFavoriteFlavors);
 
 ```
 
+### EXTRA: Converting a set into an array
+
+A set can be converted into an array by placing a set, along with the __spread operator__ (`...`) directly inside an array literal.
+
+#### Approach #1: Using the spread operator
+
+```js
+// shopping.js
+//
+// Example of converting a set into an array using the spread operator.
+
+// 1. Create a Set with some items in it.
+const shoppingSet = new Set().add('Apples').add('Bananas').add('Beans');
+
+console.log(shoppingSet); // Set { 'Apples', 'Bananas', 'Beans' }
+console.log(typeof shoppingSet); // object
+
+// 2. Convert it into an array
+
+const shoppingArray = [...shoppingSet];
+
+console.log(shoppingArray); // [ 'Apples', 'Bananas', 'Beans' ]
+console.log(typeof shoppingArray); // object
+```
+
+#### Approach #2: Using the `Array.from()` method to do the same thing
+
+```js
+// shopping2.js
+//
+// Example of converting a set into an array using the Array.from() method.
+// An alternative appraoch from having to use the spread operator to accomplish
+// the exact same thing.
+
+// 1. Create a Set with some items in it.
+const shoppingSet = new Set().add('Apples').add('Bananas').add('Beans');
+
+console.log(shoppingSet); // Set { 'Apples', 'Bananas', 'Beans' }
+console.log(typeof shoppingSet); // object
+
+// 2. Convert it into an array
+
+const shoppingArray = Array.from(shoppingSet);
+
+console.log(shoppingArray); // [ 'Apples', 'Bananas', 'Beans' ]
+console.log(typeof shoppingArray); // object
+```
+### EXTRA: Copy an array with duplicate values removed
+
+Involves using the spread operator and the new Set constructor function.
+
+```js
+// duplicates.js
+//
+// Example of an appraoch to copy an array with duplicate values removed
+
+const duplicate = [3,1,4,1,1,5,6,3,4,5,6];
+
+const nonDuplicate = [... new Set(duplicate)];
+
+console.log(nonDuplicate);  // [ 3, 1, 4, 5, 6 ]
+```
 
 ## WeakSets
 
