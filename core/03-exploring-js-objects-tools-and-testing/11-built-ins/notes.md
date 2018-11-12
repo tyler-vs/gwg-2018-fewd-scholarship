@@ -38,6 +38,9 @@ Build-upon examples found in the [examples](./examples/) directory.
 - Quiz: working with WeakSets
 - Maps
 - Creating and modifying maps
+  - Create a Map
+  - Modifying Maps
+- Working with Maps
 - Looping through maps
 - WeakMaps
 - Promises intro
@@ -767,12 +770,171 @@ console.log(uniqueFlavors);
 
 ## Maps
 
+Maps & Weak Maps and Sets and Weak Sets
 
+Both have similar properties and methods. Both Maps and Sets are _iterable_, so we can loop over them. Both WeakMaps and weak Sets do not prevent garbage collection.
 
+Essentially, a Map is an object that lets you store key-value pairs where both the keys and the values can be objects, primitive values, or a combination of the two.
 
 ## Creating and modifying maps
 
+### Create a Map
 
+Using `new Map()` constructor to create an empty map with no key-value pairs.
+
+```js
+// employees.js
+//
+// Example of creating a Map
+
+const employees = new Map();
+
+console.log(employees); // Map {}
+
+```
+
+### Modifying Maps
+
+Unlike Sets, you cannot create MAps from a list of values; instead, you add key-values by using the Map's `.set()` method.
+
+```js
+// employees2.js
+//
+// Example of modifying maps. Using the Map's .set() method
+
+const employees = new Map();
+
+console.log(employees); // Map {}
+
+// Use .add() to add key-values to a Map.
+
+// Add James
+employees.set('james.parkes@udacity.com', {
+  firstName: 'James',
+  lastName: 'Parkes',
+  role: 'Content Developer',
+});
+
+// Add Julia
+employees.set('julia@udacity.com', {
+  firstName: 'Julia',
+  lastName: 'Van Cleve',
+  role: 'Content Developer',
+});
+
+// Add Richard
+employees.set('richard@udacity.com', {
+  firstName: 'Richard',
+  lastName: 'Kalehoff',
+  role: 'Content Developer',
+});
+
+
+// Log the employees
+
+console.log(employees); // Map {
+  // 'james.parkes@udacity.com' => { firstName: 'James',
+  //   lastName: 'Parkes',
+  //   role: 'Content Developer' },
+  // 'julia@udacity.com' => { firstName: 'Julia',
+  //   lastName: 'Van Cleve',
+  //   role: 'Content Developer' },
+  // 'richard@udacity.com' => { firstName: 'Richard',
+  //   lastName: 'Kalehoff',
+  //   role: 'Content Developer' } }
+```
+
+The `.set` method takes two arguments. The first argument is the key, which is used to reference the second argument, the value.
+
+To remove key-value pairs, simply use the `.delete()` method.
+
+
+```js
+// employees3.js
+//
+// Example of modifying maps. Using the Map's .delete() method to remove
+// a key-value pair from a Map.
+
+const employees = new Map();
+
+console.log(employees); // Map {}
+
+// Use .add() to add key-values to a Map.
+
+// Add James
+employees.set('james.parkes@udacity.com', {
+  firstName: 'James',
+  lastName: 'Parkes',
+  role: 'Content Developer',
+});
+
+// Add Julia
+employees.set('julia@udacity.com', {
+  firstName: 'Julia',
+  lastName: 'Van Cleve',
+  role: 'Content Developer',
+});
+
+// Add Richard
+employees.set('richard@udacity.com', {
+  firstName: 'Richard',
+  lastName: 'Kalehoff',
+  role: 'Content Developer',
+});
+
+// Remove some employees using the .delete() method
+employees.delete('julia@udacity.com');
+employees.delete('richard@udacity.com');
+
+// Log the employees
+console.log(employees);
+```
+
+Using the `.clear()` method to remove all key-value pairs from the Map.
+
+```js
+// employees4.js
+//
+// Example of modifying maps. Using the Map's .delete() method to remove
+// a key-value pair from a Map.
+
+const employees = new Map();
+
+console.log(employees); // Map {}
+
+// Use .add() to add key-values to a Map.
+
+// Add James
+employees.set('james.parkes@udacity.com', {
+  firstName: 'James',
+  lastName: 'Parkes',
+  role: 'Content Developer',
+});
+
+// Add Julia
+employees.set('julia@udacity.com', {
+  firstName: 'Julia',
+  lastName: 'Van Cleve',
+  role: 'Content Developer',
+});
+
+// Add Richard
+employees.set('richard@udacity.com', {
+  firstName: 'Richard',
+  lastName: 'Kalehoff',
+  role: 'Content Developer',
+});
+
+// Remove all employees using the .clear() method
+employees.clear();
+
+// Log the employees
+console.log(employees);
+```
+
+## Working with Maps
+
+After a Map has been created, the `.has()` method can be used to check if a key-value pair exists in your Map by passing it a key.
 
 
 ## Looping through maps
