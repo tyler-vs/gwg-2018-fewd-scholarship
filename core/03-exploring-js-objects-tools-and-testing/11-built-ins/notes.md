@@ -34,6 +34,7 @@ Build-upon examples found in the [examples](./examples/) directory.
     - Approach #2: Using the `Array.from()` method to do the same thing
   - EXTRA: Copy an array with duplicate values removed
 - WeakSets
+  - Garbage Collection
 - Quiz: working with WeakSets
 - Maps
 - Creating and modifying maps
@@ -50,8 +51,6 @@ Build-upon examples found in the [examples](./examples/) directory.
 - Sending data into/out of a generator
 - Lesson 3 summary
 - Further Reading
-  - symbols
-  - Iterators
 
 <!-- /MarkdownTOC -->
 
@@ -585,7 +584,130 @@ console.log(nonDuplicate);  // [ 3, 1, 4, 5, 6 ]
 
 ## WeakSets
 
+A WeakSet is like a normal Set with a few key differences: 
 
+1. a WeakSet can only contain objects
+2. a WeakSet is not iterable which means it cannot be looped over
+3. a WeakSet does not have a `.clear()` method
+
+Creating a WeakSet is similar to creating a Set but we use the `WeakSet` constructor.
+
+```js
+// roster.js
+//
+// Example of creating a WeakSet.
+
+// Students objects
+let student1 = {
+  name: 'James',
+  age: 26,
+  gender: 'male'
+};
+let student2 = {
+  name: 'Julia',
+  age: 27,
+  gender: 'female'
+};
+let student3 = {
+  name: 'Richard',
+  age: 31,
+  gender: 'male'
+};
+
+// Creating a WeakSet
+const roster = new WeakSet([student1, student2, student3]);
+
+console.log(roster); // WeakSet {{…}, {…}, {…}}
+
+```
+
+Since WeakSets can only contain objects, when adding a primitive value type, following the above example, `roster.add('Amanda');` will cause an error. 
+
+An updated version of our example:
+
+```js
+// roster2.js
+//
+// Example of creating a WeakSet.
+
+// Students objects
+let student1 = {
+  name: 'James',
+  age: 26,
+  gender: 'male'
+};
+let student2 = {
+  name: 'Julia',
+  age: 27,
+  gender: 'female'
+};
+let student3 = {
+  name: 'Richard',
+  age: 31,
+  gender: 'male'
+};
+
+// Creating a WeakSet
+const roster = new WeakSet([student1, student2, student3]);
+
+console.log(roster); // WeakSet {{…}, {…}, {…}}
+
+// Attempting to add a primitive data type to the WeakSet
+roster.add('Amanda'); // Uncaught TypeError: Invalid value used in weak set
+
+
+```
+
+### Garbage Collection
+
+In JavaScript, memory is allocated when new values are created and is 'automatically' freed up when those values are no longer needed. This process of feeding up memory after it is no longer needed is known as __garbage collection__.
+
+WeakSets take advantage of this by exclusively working with objects. If you set an object to `null`, then you are essentially deleting the object. And when JavaScript's garbage collector runs, the memory that object previously occupied will be freed up to be used later in your program. Review this example:
+
+```js
+// garbage.js
+//
+// Example of using a WeakSet and garbage collection.
+
+// 1. Create an array with values.
+let arr = [1,2,3];
+
+// 2. Add the array as an item to a set
+const strong = new Set().add(arr);
+
+// 3. Remove the original array
+arr = null; // Remove reference to the original array
+
+// 4. Log
+console.log(strong); // Set { [ 1, 2, 3 ] }
+```
+In above example we setup our illustration by adding an array as an item to a Set. Then we remove the reference to the original arr that was added to the Set. Continuing with our example:
+
+```js
+// garbage2.js
+//
+// Example of using a WeakSet and garbage collection.
+
+// 1. Create an array with values.
+let arr = [1,2,3];
+
+// 2. Add the array as an item to a set
+const strong = new Set().add(arr);
+
+// 3. Remove the original array
+arr = null; // Remove reference to the original array
+
+// 4. Log
+console.log(strong); // Set { [ 1, 2, 3 ] }
+
+// Since the array still exists inside of the set (i.e. strong)
+// we can get the orignal value of the array back even after Step 3 from above.
+
+// 5. Get our original array back
+arr = [...strong][0];
+
+console.log(arr);
+```
 
 
 ## Quiz: working with WeakSets
@@ -664,17 +786,23 @@ console.log(nonDuplicate);  // [ 3, 1, 4, 5, 6 ]
 
 ## Further Reading
 
-### symbols
-
-- https://javascript.info/symbol
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
-- https://developer.mozilla.org/en-US/docs/Glossary/Symbol
-- https://developer.mozilla.org/en-US/docs/Glossary/Primitive
-- http://2ality.com/2014/12/es6-symbols.html
-- https://en.wikipedia.org/wiki/Enumerated_type
-- https://codeburst.io/es2015-built-ins-part-1-symbols-sets-and-maps-608f126dd906
-- https://www.sitepoint.com/es6-symbols-uses/
-
-### Iterators
-
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols
+- Symbols
+  + https://javascript.info/symbol
+  + https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+  + https://developer.mozilla.org/en-US/docs/Glossary/Symbol
+  + https://developer.mozilla.org/en-US/docs/Glossary/Primitive
+  + http://2ality.com/2014/12/es6-symbols.html
+  + https://en.wikipedia.org/wiki/Enumerated_type
+  + https://codeburst.io/es2015-built-ins-part-1-symbols-sets-and-maps-608f126dd906
+  + https://www.sitepoint.com/es6-symbols-uses/
+- Iterators
+  + https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols
+- Sets
+  + https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+  + 
+- WeakSets
+  + https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet
+  + 
+- Related
+  + [MDN: Article on Memory Management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
+  + [MDN: Garbage Collection](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Internals/Garbage_collection)
