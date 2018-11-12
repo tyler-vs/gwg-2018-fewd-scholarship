@@ -1060,3 +1060,7 @@ See ['numerals.js'](./examples/numerals.js) for a overview of the map lesson in 
 - Related
   + [MDN: Article on Memory Management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
   + [MDN: Garbage Collection](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Internals/Garbage_collection)
+  + [Sitepoint tutorial on Map, Set, Weak Map and Weak Set](https://www.sitepoint.com/es6-collections-map-set-weakmap-weakset/)
+  + [SO: Actual uses for Weak Maps in ES6](https://stackoverflow.com/questions/29413222/what-are-the-actual-uses-of-es6-weakmap)
+
+
