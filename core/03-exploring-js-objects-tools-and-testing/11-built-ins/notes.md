@@ -936,6 +936,48 @@ console.log(employees);
 
 After a Map has been created, the `.has()` method can be used to check if a key-value pair exists in your Map by passing it a key.
 
+```js
+// members.js
+//
+// Example for using .has() method with a Map
+
+const members = new Map();
+
+members.set('Evelyn', 75.68);
+members.set('Liam', 20.16);
+members.set('Sophia', 0);
+members.set('Marcus', 10.25);
+
+// To check if a key-value exists on a Map, pass in the key using
+// the .has method
+console.log(members.has('Xavier')); // false
+console.log(members.has('Marcus')); // true
+```
+
+Passing a key to the `.get()` method to retrieve values from a Map:
+
+```js
+// members2.js
+//
+// Example for using .get() method with a Map to retrieve values form a Map.
+
+// 1. Create a Map
+const members = new Map();
+
+// 2. Use .set() method to add items to the Map
+members.set('Evelyn', 75.68);
+members.set('Liam', 20.16);
+members.set('Sophia', 0);
+members.set('Marcus', 10.25);
+
+// 3. Test and log, use .get() to retreive item values.
+console.log(typeof members);  // object
+console.log(members.get('Evelyn')); // 75.68
+console.log(members.get('Xavier')); // undefined
+
+```
+
+See ['numerals.js'](./examples/numerals.js) for a overview of the map lesson in one JavaScript file.
 
 ## Looping through maps
 
